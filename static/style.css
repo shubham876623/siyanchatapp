@@ -1,0 +1,105 @@
+/* Base Chat Container */
+.chat-container {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 95%;
+    position: relative;
+}
+
+/* User Message */
+.user-msg {
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: 30px;
+    text-align: right;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 90%;
+}
+
+/* Assistant/Bot Message */
+.bot-msg {
+    background-color: #f5f5f5;
+    margin-right: auto;
+    margin-left: 20px;
+    text-align: left;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 90%;
+}
+
+/* Copy Button */
+.copy-btn {
+    font-size: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    padding: 3px 8px;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+}
+
+/* Sidebar Session Buttons */
+.inactive-chat-btn, .active-chat-btn {
+    width: 100%;
+    padding: 8px 12px;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.2s ease-in-out;
+}
+
+.inactive-chat-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.active-chat-btn {
+    background-color: #d9eaff;
+    font-weight: bold;
+}
+
+/* ---------------------------
+   Dark Mode Support (Auto)
+---------------------------- */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1e1e1e;
+        color: #ffffff;
+    }
+
+    .chat-container {
+        color: #ffffff;
+    }
+
+    .bot-msg {
+        background-color: #2c2c2c;
+    }
+
+    .user-msg {
+        background-color: transparent;
+    }
+
+    .copy-btn {
+        background: #333;
+        border-color: #555;
+        color: #eee;
+    }
+
+    .inactive-chat-btn:hover {
+        background-color: #333;
+    }
+
+    .active-chat-btn {
+        background-color: #444;
+        color: #fff;
+    }
+}
